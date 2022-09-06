@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Titulo -->
+        <title>Contacto</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body class="font">
+        <!-- Encabezado -->
+        <header id="header">
+            <!-- Titulo del encabezado -->
+            <h1 class="titulo-principal"><a href="../index.html">Kenzo</a></h1>
+            <!-- Menú de navegación -->
+            <nav class="navbar">
+                <ul class="menu">
+                    <li class="menu-item"><a href="./productos.html">Productos</a></li>
+                    <li class="menu-item"><a href="./quienes-somos.html">Quiénes somos</a></li>
+                    <li class="menu-item"><a href="./ubicacion.html">Ubicación</a></li>
+                    <li class="menu-item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin del encabezado -->
+        <main>
+            <section id="section-contacto">
+                <div class="formulario-contacto">
+                    <div class="titulo">
+                     <form action="" method="get" enctype="text/plain">Dejanos tus datos y nos contactamos a la brevedad
+                    </div> 
+                    <div class="datos">   
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" placeholder="Escriba su nombre y apellido" id="nombre" />
+                        <label for="numero">Número telefónico</label>
+                        <input type="text" placeholder="Escriba su numero telefónico" id="numero" />
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" placeholder="Escriba su correo electrónico" id="correo"/>
+                    </div>
+                    <div class="parrafo">    
+                        <p>Por donde desea ser contactado?</p>
+                    </div>
+                    <div class="dondecontactar">
+                        <input type="radio" name="contacto" id="whatsapp" />
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="radio" name="contacto" id="correo electronico" />
+                        <label for="correo electronico">Correo Electrónico</label>
+                        <input type="radio" name="contacto" id="llamada telefonica" />
+                        <label for="llamada telefonica">Llamada Telefónica</label>
+                    </div>
+                    <div class="aceptar">
+                        <input type="checkbox" name="terminos" id="terminos" />
+                        <label for="terminos">Aceptar terminos y condiciones</label>
+                        <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Pie de página -->
+        <footer id="footer">
+            <div class="newsletter">
+                <form action="" method="get">Suscribite a nuestro Newsletter y enterate primero de todas las novedades</form>
+                <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" />
+                <button type="submit">Suscribirme</button>
+            </div>
+            <div>
+                <p class="copyright">© 2022 - Todos los derechos reservados</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.coderhouse.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="logo de instagram" width="35" /> 
+                </a>
+                <a href="https://coderhouse.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt="logo de facebook" width="35" />
+                </a>
+            </div>
+        </footer>
+        <!-- Fin del pie de página -->
+    </body>
+</html>
