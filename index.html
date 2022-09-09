@@ -5,32 +5,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Titulo -->
-        <title>Ecommerce</title>
+        <title>Kenzo</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="./assets/images/background-buzo.jpg" type="image/x-icon" />
+        <!-- CDN Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- CDN JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- CSS -->
         <link rel="stylesheet" href="./styles/style.css" />
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     </head>
     <body class="font">
         <!-- Encabezado -->
-        <header id="header">
-            <!-- Titulo del encabezado -->
-            <h1 class="titulo-principal">Kenzo</h1>
-            <!-- Menú de navegación -->
-            <nav class="navbar">
-                <ul class="menu">
-                    <li class="menu-item"><a href="./pages/productos.html">Productos</a></li>
-                    <li class="menu-item"><a href="./pages/quienes-somos.html">Quiénes somos</a></li>
-                    <li class="menu-item"><a href="./pages/ubicacion.html">Ubicación</a></li>
-                    <li class="menu-item"><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Kenzo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ubicacion.html">Ubicación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <!-- Fin del encabezado -->
+        <!-- Final del Encabezado  -->
         <main>
             <section class="categorias">
                 <div class="card-camperas">
@@ -52,23 +72,23 @@
             </section>
         </main>
         <!-- Pie de página -->
-        <footer id="footer">
-            <div class="newsletter">
-                <form class="form" action="" method="get">Suscribite a nuestro Newsletter y enterate primero de todas las novedades</form>
-                <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" />
-                <button class="card-button" type="submit">Suscribirme</button>
-            </div>
-            <div>
-                <p class="copyright">© 2022 - Todos los derechos reservados</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.coderhouse.com">
-                    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="logo de instagram" width="35" /> 
-                </a>
-                <a href="https://coderhouse.com">
-                    <img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt="logo de facebook" width="35" />
-                </a>
-            </div>
+        <footer id="footer" class="bg-light">
+                <div class="newsletter">
+                    <form class="form" action="" method="get">Suscribite a nuestro Newsletter y enterate primero de todas las novedades</form>
+                    <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" />
+                    <button class="card-button" type="submit">Suscribirme</button>
+                </div>
+                <div>
+                    <p class="copyright">© 2022 - Todos los derechos reservados</p>
+                </div>
+                <div class="redes">
+                    <a href="https://www.coderhouse.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="logo de instagram" width="35" /> 
+                    </a>
+                    <a href="https://coderhouse.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt="logo de facebook" width="35" />
+                    </a>
+                </div>   
         </footer>
         <!-- Fin del pie de página -->
     </body>  

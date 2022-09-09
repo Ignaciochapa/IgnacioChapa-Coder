@@ -10,40 +10,19 @@
 
 /* Header */
 
-#header {
+#navbarNav {
     display: flex;
-    width: 100vw;
+    justify-content: end;
+}
+.header {
     position: sticky;
     top: 0px;
-    padding: 20px;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
     z-index: 1;
 }
 
-.titulo-principal, a {
-    color: white;
-    text-decoration: none;
+.navbar-brand {
+    padding-left: 2rem;
 }
-
-.navbar {
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    list-style-type: none;
-    color: white;
-    gap: 20px;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: white;
-}
-
 
 
 /* Main */
@@ -161,9 +140,9 @@
     z-index: 0;
 }
 
-.card-pantalones:hover {
+/* .card-pantalones:hover {
     transform: scale(1.15);
-}
+} */
 
 
 /* Footer */
@@ -174,10 +153,10 @@
     padding: 20px;
     background-color: black;
     display: flex;
-    color: white;
+    color: black;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 0;
 }
 
 .newsletter {
@@ -231,13 +210,13 @@
     display: grid;
     width: 100vw;
     max-width: 1200px;
-    max-height: 310vh;
+    max-height: 330vh;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
-    height: 310vh;
+    height: 330vh;
     gap: 20px;
     align-content: flex-start;
     grid-template-columns: repeat (3, 1fr);
