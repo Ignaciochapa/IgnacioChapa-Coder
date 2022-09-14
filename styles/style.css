@@ -10,18 +10,10 @@
 
 /* Header */
 
-#navbarNav {
-    display: flex;
-    justify-content: end;
-}
 .header {
     position: sticky;
     top: 0px;
     z-index: 1;
-}
-
-.navbar-brand {
-    padding-left: 2rem;
 }
 
 
@@ -29,7 +21,7 @@
 
 #categorias {
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 400vh;
     grid-template-columns: 100%;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
@@ -66,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-campera.jpg);
     background-position: center center;
@@ -78,7 +70,7 @@
 }
 
 .card-camperas:hover {
-    transform: scale(1.15);
+    transform: scale(0.98);
 }
 
 .card-buzos {
@@ -87,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-buzo.jpg);
     background-position: center center;
@@ -99,7 +91,7 @@
 }
 
 .card-buzos:hover {
-    transform: scale(1.15);
+    transform: scale(0.98);
 }
 
 .card-remeras {
@@ -108,7 +100,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-remera.jpg);
     background-position: center center;
@@ -120,7 +112,7 @@
 }
 
 .card-remeras:hover {
-    transform: scale(1.15);
+    transform: scale(0.98);
 }
 
 .card-pantalones {
@@ -129,7 +121,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-pantalon.jpg);
     background-position: center center;
@@ -140,22 +132,24 @@
     z-index: 0;
 }
 
-/* .card-pantalones:hover {
-    transform: scale(1.15);
-} */
+.card-pantalones:hover {
+    transform: scale(0.98);
+}
+
 
 
 /* Footer */
 
 #footer {
-    width: 100vw;
+    width: 100%;
     height: 25vh;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: black;
     display: flex;
     color: black;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 0;
 }
 
@@ -185,7 +179,7 @@
 .redes {
     background-color: white;
     border-radius: 8px;
-    padding: 3px;
+    /* margin-right: 50px; */
     display: flex;
     gap: 8px;
 }
@@ -209,6 +203,7 @@
 .container-products {
     display: grid;
     width: 100vw;
+    flex-wrap: wrap;
     max-width: 1200px;
     max-height: 330vh;
     margin: 0 auto;
@@ -216,7 +211,7 @@
     margin-bottom: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
-    height: 330vh;
+    height: 100%;
     gap: 20px;
     align-content: flex-start;
     grid-template-columns: repeat (3, 1fr);
@@ -325,6 +320,7 @@
 
 #section-contacto {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: 5, 1fr;
     grid-template-areas: 
@@ -333,17 +329,20 @@
     "parrafo"
     "dondecontactar"
     "aceptar";
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     color: white;
     align-items: center;
     align-content: center;
-    padding-left: 2%;
     line-height: 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/buzo1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.formulario-contacto {
+    padding-left: 2%;
 }
 
 .titulo {
@@ -372,10 +371,10 @@
 /* Media Querie Index */
 
 @media screen and (min-width: 320px){
-    #header {
+    /* #header {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .newsletter {
             display: none;
@@ -383,10 +382,10 @@
 }
 
 @media screen and (min-width: 720px){
-    #header {
+    /* #header {
         display: flex;
         flex-direction: row;
-    }
+    } */
 
     .newsletter {
         display: flex;
@@ -398,5 +397,48 @@
 @media screen and (max-width: 620px) {
     .datos {
         max-width: 70%;
+    }
+}
+
+/* Media Querie Contacto */
+
+@media screen and (max-width: 750px) {
+    .card-button {
+        padding: 0px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Media Querie Todos Los Productos */
+
+@media screen and (max-width: 500px) {
+    .container-products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (9, 1fr);
+    grid-template-areas: 
+    "card"
+    "card" 
+    "card"
+    "card"
+    "card"
+    "card"
+    "card"
+    "card"
+    "card";}
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 0px;
+        position: absolute;
+        top: 1195%;
+    }
+
+    .copyright {
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 }
