@@ -1,0 +1,43 @@
+#footer {
+    width: 100%;
+    height: 25vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $primary;
+    display: flex;
+    color: $primary;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    align-items: initial;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+}
+
+.copyright {
+    display: flex;
+    text-align: left;
+    margin: 0 150px 0 0;
+}
+
+.redes {
+    background-color: white;
+    border-radius: 8px;
+    /* margin-right: 50px; */
+    display: flex;
+    gap: 8px;
+}

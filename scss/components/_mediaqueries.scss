@@ -1,0 +1,72 @@
+@media screen and (min-width: 320px){
+    /* #header {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .newsletter {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 720px){
+    /* #header {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    .newsletter {
+        display: flex;
+    }
+}
+
+/*  Media Querie Ubicacion */
+
+@media screen and (max-width: 620px) {
+    .datos {
+        max-width: 70%;
+    }
+}
+
+/* Media Querie Contacto */
+
+@media screen and (max-width: 750px) {
+    .card-button {
+        padding: 0px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Media Querie Todos Los Productos */
+
+@media screen and (max-width: 500px) {
+    .container-products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (9, 1fr);
+    grid-template-areas: 
+    "card"
+    "card" 
+    "card"
+    "card"
+    "card"
+    "card"
+    "card"
+    "card"
+    "card";}
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 0px;
+        position: absolute;
+        top: 1195%;
+    }
+
+    .copyright {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}

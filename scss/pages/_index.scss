@@ -1,0 +1,120 @@
+.card-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 12px;
+    padding: 8px;
+    
+    &:hover {
+        background-color: #e7e7e7;
+    }
+}
+
+.card-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+
+#categorias {
+    display: grid;
+    width: 100%;
+    height: 400vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "camperas"
+    "buzos"
+    "remeras"
+    "pantalones";
+}
+
+.card-camperas {
+    grid-area: camperas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-campera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+
+.card-buzos {
+    grid-area: buzos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-buzo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+
+.card-remeras {
+    grid-area: remeras;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-remera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+
+.card-pantalones {
+    grid-area: pantalones;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/background-pantalon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}

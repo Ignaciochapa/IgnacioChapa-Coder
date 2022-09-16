@@ -1,0 +1,23 @@
+{
+  "name": "coderhouse-sass1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ignaciochapa/IgnacioChapa-Coder.git"
+  },
+  "author": "Luis Ignacio Chapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ignaciochapa/IgnacioChapa-Coder/issues"
+  },
+  "homepage": "https://github.com/Ignaciochapa/IgnacioChapa-Coder#readme"
+}
