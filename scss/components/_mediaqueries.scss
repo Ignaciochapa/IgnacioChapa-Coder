@@ -1,20 +1,10 @@
 @media screen and (min-width: 320px){
-    /* #header {
-        display: flex;
-        flex-direction: column;
-    } */
-
     .newsletter {
-            display: none;
-        }
+        display: none;
+    }
 }
 
 @media screen and (min-width: 720px){
-    /* #header {
-        display: flex;
-        flex-direction: row;
-    } */
-
     .newsletter {
         display: flex;
     }
@@ -39,7 +29,7 @@
 
 /* Media Querie Todos Los Productos */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .container-products {
     grid-template-columns: 1fr;
     grid-template-rows: repeat (9, 1fr);
@@ -54,19 +44,65 @@
     "card"
     "card";}
 
+    .section-productos {
+        height: 1480vh;
+    }
+
     #footer {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-content: center;
         justify-content: center;
-        margin-top: 0px;
-        position: absolute;
-        top: 1195%;
     }
 
     .copyright {
         margin-right: 0px;
         margin-bottom: 10px;
+    }
+}
+
+/* Media Querie Ubicacion */
+
+@media (max-width: 600px) {
+
+    #section-ubicacion {
+        height: 100vh;
+    }
+    .sucursales {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        padding-top: 2rem;
+    }
+
+    .sucursal-moreno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sucursal-moreno-subtitulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sucursal-merlo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sucursal-merlo-subtitulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapa-sucursalmoreno {
+        display: none;
+    }
+
+    .mapa-sucursalmerlo {
+        display: none;
     }
 }

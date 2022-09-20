@@ -31,9 +31,10 @@
     "card card card"
     "card card card";
 
-    .card-product, .card-allproducts-subtitle, .card-price {
+    .card-product, .card-allproducts-subtitle, .card-price, a {
         display: grid;
         grid-area: auto;
+        text-decoration: none;
         background-color: rgb(199, 199, 199);
         color: black;
         border-radius: 12px;
