@@ -11,20 +11,17 @@
 }
 
 .container-products {
-    display: grid;
+    @include templateGrid (3);
+    @extend .centrar;
     width: 100vw;
     flex-wrap: wrap;
     max-width: 1200px;
-    max-height: 330vh;
-    margin: 0 auto;
+    max-height: 360vh;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
     height: 100%;
-    gap: 20px;
-    align-content: flex-start;
-    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (3, 1fr);
     grid-template-areas: 
     "card card card"

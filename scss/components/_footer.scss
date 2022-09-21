@@ -33,10 +33,27 @@
     margin: 0 150px 0 0;
 }
 
-.redes {
-    background-color: white;
-    border-radius: 8px;
-    /* margin-right: 50px; */
+.footer__rrss {
     display: flex;
-    gap: 8px;
+    gap: 10px;
+
+    // mapa
+    $iconSocialMedia: (
+      twitter: #55acee,
+      instagram: #c92d8f,
+      facebook: #2279e4,
+    );
+
+    // bucle
+    @each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+      .rs-#{$nameSocialMedia} {
+        color: black;
+        font-size: 30px;
+        transition: 0.5s;
+
+        &:hover {
+          color: $colorIcon;
+        }
+      }
+    }
 }

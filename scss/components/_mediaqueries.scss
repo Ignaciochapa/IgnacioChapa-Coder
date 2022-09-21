@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 720px){
     .newsletter {
-        display: flex;
+    display: flex;
     }
 }
 
@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 620px) {
     .datos {
-        max-width: 70%;
+    max-width: 70%;
     }
 }
 
@@ -45,7 +45,11 @@
     "card";}
 
     .section-productos {
-        height: 1480vh;
+        height: 1728vh;
+    }
+
+    .card-button {
+        padding: 8px;
     }
 
     #footer {

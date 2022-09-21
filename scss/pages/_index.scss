@@ -1,12 +1,12 @@
 .card-button {
     background-color: white;
     color: black;
-    border: 2px solid #e7e7e7;
+    border: 2px solid #9d9c9c;
     border-radius: 12px;
     padding: 8px;
     
     &:hover {
-        background-color: #e7e7e7;
+        background-color: #9d9c9c;
     }
 }
 
@@ -47,10 +47,6 @@
     color: white;
     transition: 0.5s;
     z-index: 0;
-
-    &:hover {
-        transform: scale(0.98);
-    }
 }
 
 
@@ -69,10 +65,6 @@
     color: white;
     transition: 0.5s;
     z-index: 0;
-
-    &:hover {
-        transform: scale(0.98);
-    }
 }
 
 
@@ -91,10 +83,6 @@
     color: white;
     transition: 0.5s;
     z-index: 0;
-
-    &:hover {
-        transform: scale(0.98);
-    }
 }
 
 
@@ -113,8 +101,4 @@
     color: white;
     transition: 0.5s;
     z-index: 0;
-
-    &:hover {
-        transform: scale(0.98);
-    }
 }

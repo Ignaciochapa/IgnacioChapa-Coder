@@ -2,8 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fuente;
 }
 
-.font {
-    font-family: $fuente;
+// Extends
+.centrar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Mixins
+@mixin templateGrid ($columns) {
+    display: grid;
+    grid-template-columns: repeat ($columns, 1fr);
+    gap: 20px;
 }
