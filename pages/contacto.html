@@ -52,52 +52,50 @@
         <!-- Final del Encabezado  -->
         <main>
             <section id="section-contacto">
-                <div class="formulario-contacto">
-                    <div class="titulo">
-                     <form action="" method="get" enctype="text/plain">Dejanos tus datos y nos contactamos a la brevedad
-                    </div> 
-                    <div class="datos">   
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" placeholder="Escriba su nombre y apellido" id="nombre" />
-                        <label for="numero">Número telefónico</label>
-                        <input type="text" placeholder="Escriba su numero telefónico" id="numero" />
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" placeholder="Escriba su correo electrónico" id="correo"/>
-                    </div>
-                    <div class="parrafo">    
-                        <p>Por donde desea ser contactado?</p>
-                    </div>
-                    <div class="dondecontactar">
-                        <input type="radio" name="contacto" id="whatsapp" />
-                        <label for="whatsapp">WhatsApp</label>
-                        <input type="radio" name="contacto" id="correo electronico" />
-                        <label for="correo electronico">Correo Electrónico</label>
-                        <input type="radio" name="contacto" id="llamada telefonica" />
-                        <label for="llamada telefonica">Llamada Telefónica</label>
-                    </div>
-                    <div class="aceptar">
-                        <input type="checkbox" name="terminos" id="terminos" />
-                        <label for="terminos">Aceptar terminos y condiciones</label>
-                        <button type="submit" class="card-button">Enviar</button>
-                        </form>
-                    </div>
-                </div>
+                    <div class="formulario-contacto">
+                        <form action="" method="get" enctype="text/plain"></form>
+                            <h2 class="titulo">Dejanos tus datos y te contactamos a la brevedad</h2> 
+                            <div class="datos">   
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" placeholder="Escriba su nombre y apellido" id="nombre" />
+                                <label for="numero">Número telefónico</label>
+                                <input type="text" placeholder="Escriba su numero telefónico" id="numero" />
+                                <label for="correo">Correo Electrónico</label>
+                                <input type="email" placeholder="Escriba su correo electrónico" id="correo" />
+                            </div>
+                            <div class="parrafo">
+                                <p class="pregunta">Por donde desea ser contactado?</p>
+                            </div>
+                            <div class="dondecontactar">
+                                <input type="radio" name="contacto" id="whatsapp" class="input"/>
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="radio" name="contacto" id="correo electronico" class="input"/>
+                                <label for="correo electronico">Correo Electrónico</label>
+                                <input type="radio" name="contacto" id="llamada telefonica" class="input"/>
+                                <label for="llamada telefonica">Llamada Telefónica</label>
+                            </div>
+                            <div class="aceptar">
+                                <input type="checkbox" name="terminos" id="terminos" />
+                                <label for="terminos">Aceptar terminos y condiciones</label>
+                                <button type="submit" class="card-button" onclick="alert('Enviado exitosamente')">Enviar</button>
+                            </div>
+                        </form>    
+                    </div>    
             </section>
         </main>
         <!-- Pie de página -->
         <footer id="footer" class="bg-light">
             <div class="newsletter">
-                <form action="" method="get">Suscribite a nuestro Newsletter y enterate primero de todas las novedades</form>
-                <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" />
-                <button type="submit" class="card-button">Suscribirme</button>
+                <form class="form" action="" method="get">Suscribite a nuestro Newsletter y enterate primero de todas las novedades
+                    <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" />
+                    <button class="card-button" type="submit" onclick="alert('Felicitaciones! Te suscribiste con éxito')">Suscribirme</button>
+                </form>
             </div>
-            <div>
-                <p class="copyright">© 2022 - Todos los derechos reservados</p>
-            </div>
+                <small class="copyright">© 2022 - Todos los derechos reservados</small>
             <div class="footer__rrss">
-                <a href="" class="rs-facebook"><i class="bi bi-facebook"></i></a>
-                <a href="" class="rs-instagram"><i class="bi bi-instagram"></i></a>
-                <a href="" class="rs-twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://facebook.com" class="rs-facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" class="rs-instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com" class="rs-twitter"><i class="bi bi-twitter"></i></a>
             </div>
         </footer>
         <!-- Fin del pie de página -->

@@ -31,12 +31,16 @@
     .datos {
         display: flex;
         flex-direction: column;
-        max-width: 30%;
         grid-area: datos;
     }
 
     .parrafo {
         grid-area: parrafo;
+        margin-top: 0.5rem;
+    }
+
+    .pregunta {
+        margin-bottom: 0;
     }
 
     .dondecontactar {

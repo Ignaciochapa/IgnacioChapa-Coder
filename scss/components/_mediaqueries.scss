@@ -20,11 +20,32 @@
 
 /* Media Querie Contacto */
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 850px) {
+    .datos {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .card-button {
         padding: 0px;
         margin-bottom: 6px;
     }
+
+    #section-contacto {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .input {
+        align-self: flex-start;
+    }
+
+    .dondecontactar {
+        display: flex;
+        flex-direction: column;
+    }    
 }
 
 /* Media Querie Todos Los Productos */
@@ -44,10 +65,7 @@
     "card"
     "card";}
 
-    .section-productos {
-        height: 1728vh;
-    }
-
+    
     .card-button {
         padding: 8px;
     }
@@ -73,6 +91,11 @@
     #section-ubicacion {
         height: 100vh;
     }
+
+    .ubicacion-titulo-principal {
+        text-align: center;
+    }
+
     .sucursales {
         display: flex;
         flex-direction: column;

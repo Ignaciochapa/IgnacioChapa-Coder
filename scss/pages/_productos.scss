@@ -1,6 +1,5 @@
 .subtitle-principal {
     display: flex;
-    width: 100vw;
     color: black;
     margin-top: 30px;
     padding-bottom: 30px;
@@ -16,7 +15,6 @@
     width: 100vw;
     flex-wrap: wrap;
     max-width: 1200px;
-    max-height: 360vh;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 2%;
@@ -40,7 +38,15 @@
         justify-content: center;
         align-content: center;
         text-align: center;
-        padding: 5%;
+        padding: 4%;
+    }
+
+    .card-allproducts-subtitle {
+        margin-bottom: 0;
+    }
+
+    .card-price {
+        margin-bottom: 0;
     }
 
     .card-img {
@@ -55,7 +61,7 @@
         transition: 0.5s;
     
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
     }
 }
