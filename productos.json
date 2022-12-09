@@ -1,0 +1,90 @@
+[
+    {
+       "id":1,
+       "titulo":"Buzo 1",
+       "imagen":"/assets/images/background-buzo.jpg",
+       "categoria":{
+          "nombre":"Buzos",
+          "id":"buzos"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":2,
+       "titulo":"Buzo 2",
+       "imagen":"/assets/images/buzo2.jpg",
+       "categoria":{
+          "nombre":"Buzos",
+          "id":"buzos"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":3,
+       "titulo":"Buzo 3",
+       "imagen":"/assets/images/buzo3.jpg",
+       "categoria":{
+          "nombre":"Buzos",
+          "id":"buzos"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":4,
+       "titulo":"Campera 1",
+       "imagen":"/assets/images/campera1.jpg",
+       "categoria":{
+          "nombre":"Camperas",
+          "id":"camperas"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":5,
+       "titulo":"Campera 2",
+       "imagen":"/assets/images/campera2.jpg",
+       "categoria":{
+          "nombre":"Camperas",
+          "id":"camperas"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":6,
+       "titulo":"Campera 3",
+       "imagen":"/assets/images/campera3.jpg",
+       "categoria":{
+          "nombre":"Camperas",
+          "id":"camperas"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":7,
+       "titulo":"Remera 1",
+       "imagen":"/assets/images/remera1.jpg",
+       "categoria":{
+          "nombre":"Remeras",
+          "id":"remeras"
+       },
+       "precio":1000,
+       "cantidad":1
+    },
+    {
+       "id":8,
+       "titulo":"Remera 2",
+       "imagen":"/assets/images/remera2.jpg",
+       "categoria":{
+          "nombre":"Remeras",
+          "id":"remeras"
+       },
+       "precio":1000,
+       "cantidad":1
+    }
+ ]
