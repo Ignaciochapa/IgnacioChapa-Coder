@@ -93,29 +93,48 @@ const productos = [
     },
 ];
 
-
+// Mostrar productos
 const contenedorProductos = document.querySelector("#contenedor-productos");
+
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
-    productosElegidos.forEach(producto => {
-        const div = document.createElement("div");
-        div.classList.add("producto");
-        div.innerHTML = `
+    fetch("../productos.json")
+        .then((result) => result.json())
+        .then(data => {
+            productosElegidos.forEach(data => {
+                const div = document.createElement("div");
+                div.classList.add("producto");
+                div.innerHTML = `
             <div class="card" style="width: 18rem;">
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.titulo}">
+                <img src="${data.imagen}" class="card-img-top" alt="${data.titulo}">
                 <div class="card-body">
-                  <h5 class="card-title">${producto.titulo}</h5>
-                  <p class="card-text">$${producto.precio}</p>
-                  <button id="${producto.id}" class="btn btn-primary">Agregar al carrito</button>
+                  <h5 class="card-title">${data.titulo}</h5>
+                  <p class="card-text">$${data.precio}</p>
+                  <button id="${data.id}" class="btn btn-primary">Agregar al carrito</button>
                 </div>
             </div>
         `;
-        contenedorProductos.append(div);
-        const boton = document.getElementById(`${producto.id}`)
-        boton.addEventListener('click', () => {
-        agregarAlCarrito(producto.id)
+                contenedorProductos.append(div);
+                const boton = document.getElementById(`${data.id}`)
+                boton.addEventListener('click', () => {
+                    agregarAlCarrito(data.id)
+                })
+            })
+
         })
-    })
+        .catch((err) => {
+            Toastify({
+                text: "Hubo un error al conectarse con la base de datos",
+                duration: 3000,
+                close: true,
+                gravity: "bottom",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+            }).showToast();
+        });
 }
 cargarProductos(productos);
 
@@ -130,10 +149,10 @@ let carrito = []
 
 //AGREGAR AL CARRITO
 const agregarAlCarrito = (prodId) => {
-    const existe = carrito.some (prod => prod.id === prodId)
-    if (existe){
-        const prod = carrito.map (prod => {
-            if (prod.id === prodId){
+    const existe = carrito.some(prod => prod.id === prodId)
+    if (existe) {
+        const prod = carrito.map(prod => {
+            if (prod.id === prodId) {
                 prod.cantidad++
             }
         })
@@ -146,7 +165,7 @@ const agregarAlCarrito = (prodId) => {
 
 // Local Storage
 document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')){
+    if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         actualizarCarrito()
     }
@@ -179,7 +198,7 @@ function eliminarDelCarrito(id) {
         localStorage.clear()
     }
     actualizarCarrito();
-  }
+}
 
 // Vaciar carrito
 botonVaciar.addEventListener('click', () => {
